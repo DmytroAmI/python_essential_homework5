@@ -327,3 +327,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,python,pycharm,venv
 
 .idea
+
+img_1.png
