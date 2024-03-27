@@ -89,3 +89,12 @@ if __name__ == '__main__':
 
     delattr(cont1, "job")
     print(cont1.__dict__)
+
+    print(isinstance(cont1, Contact))
+    print(isinstance(cont1, UpdateContact))
+    print(isinstance(cont2, Contact))
+    print(isinstance(cont2, UpdateContact))
+    print(isinstance(cont1.name, str))
+
+    print(issubclass(Contact, UpdateContact))
+    print(issubclass(UpdateContact, Contact))
