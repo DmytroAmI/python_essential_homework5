@@ -60,3 +60,32 @@ if __name__ == '__main__':
 
     print(Contact.__bases__)
     print(UpdateContact.__bases__)
+
+    print(dir(cont1))
+    print(dir(Contact))
+
+    print(hasattr(cont1, "name"))
+    print(hasattr(cont1, "age"))
+    print(hasattr(cont1, "job"))
+
+    print(hasattr(cont2, "name"))
+    print(hasattr(cont2, "age"))
+    print(hasattr(cont2, "job"))
+
+    print(getattr(cont1, "name"))
+    print(getattr(cont1, "age"))
+    print(getattr(cont2, "name"))
+    print(getattr(cont2, "age"))
+
+    print(getattr(cont1, "job", "teacher"))
+    print(cont1.__dict__)
+
+    setattr(cont1, "name", "Max")
+    print(cont1.name)
+    setattr(cont1, "age", 18)
+    print(cont1.age)
+    setattr(cont1, "job", "teacher")
+    print(cont1.__dict__)
+
+    delattr(cont1, "job")
+    print(cont1.__dict__)
